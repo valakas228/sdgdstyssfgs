@@ -1,0 +1,28 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<div class="page">
+    <div class="header">
+        <div class="contaiter">
+    </div>
+    </div>
+           <div class="main"><div class="about-container">
+             О НАС ПИДОРАС
+           </div>
+           {% for product in products %}
+
+<p>
+<img width="320" height="148" src="{{ product.image }}">
+</p>
+<p>{{product.name}}</p>
+<p>{{product.price}}</p>
+{% endfor %}
+
+</div>
+
+</div>
+<div class="footer"></div>
+</body>
+</html>
+
+{% endblock %}
